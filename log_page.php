@@ -80,8 +80,8 @@
 											
 										</header>
                                         <center>
-										<button type="button" onclick="location.href = 'clear_log.php';" >Clear Log</button>
-										<button type="button" onclick="location.href = 'export_log.php';" >Export Log</button>
+										<button type="button" class="button alt" onclick="location.href = 'clear_log.php';" >Clear Log</button>
+										<button type="button" class="button" onclick="location.href = 'export_log.php';" >Export Log</button>
                             			
                                         	<section>
                                             <?php include('log_page_php.php') ?>
