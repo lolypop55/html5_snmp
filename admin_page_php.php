@@ -73,7 +73,7 @@
                                                         echo "---";
                                                     else{
 														$val = explode(":", $snmpSysDescr[0]);
-                                                        echo "center".$val[1]."/center";
+                                                        echo "<center>".$val[1]."</center>";
 													}
                                                         ?></td>
                                                             <td bgcolor="#FFFFFF"><?php if ($isDown){
@@ -161,7 +161,7 @@
                                                         <td colspan="6" align="left" bgcolor="#FFFFFF"></td>
                                                     </tr>
 													
-                                                    <tr>
+                                                 <!--  <tr>
                                                         <td colspan="10" align="left" bgcolor="#FFFFFF">Refresh Every 
                                                             <select name="timeRefresh" id="timeRefresh">
 
@@ -170,9 +170,9 @@
 																<option value="3">3 Sec.</option>
                                                                 <option value="10">10 Sec.</option>
 
-                                                            </select><input name="refresh" type="button" class="button alt" value="Refresh" /></td>
+                                                            </select><input name="refresh" type="button" value="Refresh" /></td>
                                                     </tr>
-
+												-->
                                                     <?php
                                                     // Check if delete button active, start this
                                                     //==========================================

@@ -120,7 +120,7 @@ header("Refresh: 5;");
 			</div>
 
 		<!-- Footer -->
-			<!--<footer id="footer" class="container">
+			<!-- <footer id="footer" class="container">
 				<div class="row 200%">
 					<div class="12u">
 
@@ -134,7 +134,7 @@ header("Refresh: 5;");
 					
 					</div>
 				</div>
- -->
+-->
 				<!-- Copyright -->
 				<!--	<div id="copyright">
 						<ul class="menu">

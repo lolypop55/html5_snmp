@@ -16,7 +16,7 @@
 
                                 <table width="400" border="0" cellspacing="1" cellpadding="0">
                                     <tr>
-                                        <td><form action="view_page.php" method="post" >
+                                        <td><form action="manage_user.php" method="post" >
                                                 <table width="400" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
                                                     <tr>
                                                         <td bgcolor="#FFFFFF">&nbsp;</td>
@@ -67,10 +67,10 @@
                                                         $result = mysql_query($sql);
                                                         //$result2 = mysql_query($sql2);
                                                     }
-                                                    echo "<meta http-equiv=\"refresh\" content=\"0;URL=view_page.php\">";
+                                                    echo "<meta http-equiv=\"refresh\" content=\"0;URL=manage_user.php\">";
                                                 }
                                                 if (isset($_POST["add"])) {
-                                                    echo "<meta http-equiv=\"refresh\" content=\"0;URL=add_user.php\">";
+                                                    echo "<meta http-equiv=\"refresh\" content=\"0;URL=manage_user_add.php\">";
                                                 }
                                                
                                                 mysql_close();

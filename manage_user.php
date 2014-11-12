@@ -83,6 +83,7 @@
 										<section>
 										
 											<?php include('manage_user_php.php') ?>
+                                            
 
 										</section>
 									</center>
