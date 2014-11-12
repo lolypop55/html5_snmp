@@ -49,4 +49,4 @@ mysql_query($query);
 ?>
 
 <script language="JavaScript">alert("Success");</script>
-<script language="JavaScript">window.location.href = "edit_user.php";</script>
+<script language="JavaScript">window.location.href = "manage_user.php";</script>

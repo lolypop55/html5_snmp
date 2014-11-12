@@ -110,7 +110,7 @@
                                     </table>
                                     <br>
                                     <input type="submit" name="Submit" value="Save">
-                                    <input type="button" value="Cancle" onclick="window.location.href='edit_user.php'">
+                                    <input type="button" value="Cancle" onclick="window.location.href='manage_user.php'">
                                 </form>
 
 									
