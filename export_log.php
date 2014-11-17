@@ -1,3 +1,4 @@
+<?php include("check_session.php"); ?>
 <?php
 /*******EDIT LINES 3-8*******/
 $DB_Server = "localhost"; //MySQL Server    

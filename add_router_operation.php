@@ -1,3 +1,4 @@
+<?php include("check_session.php"); ?>
 <?php
 $con=mysqli_connect("localhost","root","password","logon");
 // Check connection

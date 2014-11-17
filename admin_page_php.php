@@ -1,4 +1,5 @@
-                               <?php
+<?php include("check_session.php"); ?>
+							   <?php
 
 							   function myErrorHandler($errno, $errstr, $errfile, $errline) {
 								global $isDown;

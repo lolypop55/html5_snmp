@@ -57,6 +57,7 @@
 							<li><a href="#">Veroeros feugiat</a></li>
 						</ul>-->
 					</li>
+					<li><a href="manage_router.php">Manager ROUTER</a></li>
 					<li><a href="manage_user.php">Manager USER</a></li>
 					<li><a href="topology.php">Your Topology</a></li>
                     <li class="current"><a href="log_page.php">Log File</a></li>

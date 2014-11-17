@@ -1,3 +1,4 @@
+<?php include("check_session.php"); ?>
 <?php
     mysql_connect("localhost", "root", "password");
     mysql_select_db("logon");

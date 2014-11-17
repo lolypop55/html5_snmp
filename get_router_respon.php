@@ -1,3 +1,4 @@
+<?php include("check_session.php"); ?>
 <?php
 //snmpget system stats
 

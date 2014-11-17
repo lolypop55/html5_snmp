@@ -1,4 +1,8 @@
-<?php session_start(); 
+<?php include("check_session.php"); ?>
+<?php if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 
 $isDown = FALSE;
 date_default_timezone_set("Asia/Bangkok");
@@ -64,6 +68,7 @@ header("Refresh: 5;");
 							<li><a href="#">Veroeros feugiat</a></li>
 						</ul>-->
 					</li>
+					<li><a href="manage_router.php">Manager ROUTER</a></li>
 					<li><a href="manage_user.php">Manager USER</a></li>
 					<li><a href="topology.php">Your Topology</a></li>
                     <li><a href="log_page.php">Log File</a></li>

@@ -1,3 +1,4 @@
+<?php include("check_session.php"); ?>
  <?php
                                 $host = "localhost"; // Host name 
                                 $username = "root"; // Mysql username 
