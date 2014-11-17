@@ -1,11 +1,3 @@
-<?php session_start(); 
-
-$isDown = FALSE;
-date_default_timezone_set("Asia/Bangkok");
-
-header("Refresh: 5;");
-?>
-
 <!DOCTYPE HTML>
 <!--
 	TXT by HTML5 UP
@@ -37,7 +29,7 @@ header("Refresh: 5;");
 			<header id="header">
 				<div class="logo container">
 					<div>
-						<h1><a href="index.html" id="logo">SNMP</a></h1>
+						<h1><a href="admin_page5.php" id="logo">SNMP</a></h1>
 						<p>MANAGER</p>
 					</div>
 				</div>
@@ -46,7 +38,7 @@ header("Refresh: 5;");
 		<!-- Nav -->
 			<nav id="nav" class="skel-layers-fixed">
 				<ul>
-					<li class="current"><a href="admin_page5.php">Home</a></li>
+					<li><a href="admin_page5.php">Home</a></li>
 					<li>
 						<a href="get_router.php">GET Router</a>
 						<!--<ul>
@@ -64,6 +56,7 @@ header("Refresh: 5;");
 							<li><a href="#">Veroeros feugiat</a></li>
 						</ul>-->
 					</li>
+                    <li  class="current"><a href="manage_router.php">Manager ROUTER</a></li>
 					<li><a href="manage_user.php">Manager USER</a></li>
 					<li><a href="topology.php">Your Topology</a></li>
                     <li><a href="log_page.php">Log File</a></li>
@@ -83,19 +76,18 @@ header("Refresh: 5;");
 									<article class="box page-content">
 
 										<header>
-											<h2>Admin Page</h2>
-											<p>Is refresh every 5 seconds</p>
+											<h2>Manage User</h2>
+											<p>You can manage user from this page</p>
 											
 										</header>
-                                        <center>
-										                            			
-                                        	<section>
-                                            <?php include('admin_page_php.php') ?>
-
-											</section>
-
+										<center>
+										<section>
 										
-										</center>
+											<?php include('manage_router_php.php') ?>
+                                            
+
+										</section>
+									</center>
 									</article>
 
 							</div>
@@ -120,7 +112,7 @@ header("Refresh: 5;");
 			</div>
 
 		<!-- Footer -->
-			<!-- <footer id="footer" class="container">
+			<footer id="footer" class="container">
 				<div class="row 200%">
 					<div class="12u">
 
@@ -134,15 +126,15 @@ header("Refresh: 5;");
 					
 					</div>
 				</div>
--->
+
 				<!-- Copyright -->
-					<!--<div id="copyright">
+					<div id="copyright">
 						<ul class="menu">
 							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
 			</footer>
--->
+
 	</body>
 </html>
