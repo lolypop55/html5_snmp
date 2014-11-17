@@ -5,6 +5,12 @@
 </head>
 <body>
 <?php
+	mysql_connect("localhost", "root", "password");
+    mysql_select_db("logon");
+    $query = "SELECT * FROM email where id = '001'";
+    $result = mysql_query($query);
+    $rows = mysql_fetch_array($result);
+	$emails =$rows['email']
 	require_once('googlemail/class.phpmailer.php');
 	$mail = new PHPMailer();
 	$mail->IsHTML(true);
@@ -21,7 +27,7 @@
 	$mail->Subject = "Router in Topology Up."; 
 	$mail->Body = "<b>".$_SESSION["nameup"]."UP!"."</b>";
 
-	$mail->AddAddress("gust_jk@hotmail.com", "Administrator"); // to Address
+	$mail->AddAddress("$emails", "Administrator"); // to Address
 
 
 	//$mail->AddCC("member@thaicreate.com", "Mr.Member ShotDev"); //CC
