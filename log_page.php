@@ -1,3 +1,4 @@
+<?php include("check_session.php"); ?>
 <!DOCTYPE HTML>
 <!--
 	TXT by HTML5 UP

@@ -85,24 +85,24 @@
                                         <form name="form1" method="post" action="edit_router_operation.php">
                                                                         <table width="478" border="1" style="width: 600px">
                                         <tbody>  <tr>
-                                                <td><h1>User_ID</h1></td>
-                                                <td><input type="hidden" name="User_ID" id="User_ID" value="<?php echo $rows['Router_ID']; ?>"><?php echo $rows['User_ID']; ?></td>
+                                                <td><h1>Router_ID</h1></td>
+                                                <td><input type="hidden" name="Router_ID" id="Router_ID" value="<?php echo $rows['Router_ID']; ?>"><?php echo $rows['Router_ID']; ?></td>
                                             </tr>
                                             <tr>
-                                                <td width="157"> <h1>Username</h1></td>
-                                                <td width="305"><input type="text" name="Username" id="Username" placeholder="<?php echo $rows['Router_IP']; ?>"></td>
+                                                <td width="157"> <h1>Router_IP</h1></td>
+                                                <td width="305"><input type="text" name="Router_IP" id="Router_IP" placeholder="<?php echo $rows['Router_IP']; ?>"></td>
                                             </tr>
                                             <tr>
-                                                <td width="157"> <h1>Name</h1></td>
-                                                <td width="305"><input type="text" name="Name" id="Name" placeholder="<?php echo $rows['Router_Name']; ?>"></td>
+                                                <td width="157"> <h1>Router_Name</h1></td>
+                                                <td width="305"><input type="text" name="Router_Name" id="Router_Name" placeholder="<?php echo $rows['Router_Name']; ?>"></td>
                                             </tr>
                                             <tr>
-                                                <td width="157"><h1>Status</h1></td>
-                                                <td width="305"><input type="text" name="Status" id="Status" placeholder="<?php echo $rows['String']; ?>"></td>
+                                                <td width="157"><h1>String</h1></td>
+                                                <td width="305"><input type="text" name="String" id="String" placeholder="<?php echo $rows['String']; ?>"></td>
                                             </tr>
 											 <tr>
-                                                <td width="157"><h1>Status</h1></td>
-                                                <td width="305"><input type="text" name="Status" id="Status" placeholder="<?php echo $rows['Remark']; ?>"></td>
+                                                <td width="157"><h1>Remark</h1></td>
+                                                <td width="305"><input type="text" name="Remark" id="Remark" placeholder="<?php echo $rows['Remark']; ?>"></td>
                                             </tr>
                                             </tr>
                                            

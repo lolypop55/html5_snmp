@@ -8,45 +8,45 @@
 mysql_connect("localhost", "root", "password");
 mysql_select_db("logon");
 
-isset($_POST['Router_ID']) ? $userId = $_POST['Router_ID'] : $userId = NULL;
-isset($_POST['Username']) ? $username = $_POST['Router_IP'] : $username = NULL;
-isset($_POST['Status']) ? $status = $_POST['Router_Name'] : $status = NULL;
-isset($_POST['String']) ? $name = $_POST['String'] : $name = NULL;
-isset($_POST['Password']) ? $password = $_POST['Remark '] : $password = NULL;
+isset($_POST['Router_ID']) ? $Router_ID = $_POST['Router_ID'] : $Router_ID = NULL;
+isset($_POST['Router_IP']) ? $Router_IP = $_POST['Router_IP'] : $Router_IP = NULL;
+isset($_POST['Router_Name']) ? $Router_Name = $_POST['Router_Name'] : $Router_Name = NULL;
+isset($_POST['String']) ? $String = $_POST['String'] : $String = NULL;
+isset($_POST['Remark']) ? $Remark = $_POST['Remark'] : $Remark = NULL;
 
-if ($userId == NULL || $username == NULL || $status == NULL || $password == NULL || $name == NULL) {
-   //echo 'userid = ' . $userId . ' username = ' . $username . ' Status = ' . $status . ' name = ' . $name . ' password = ' . $password; 
+if ($Router_ID == NULL || $Router_IP == NULL || $Router_Name == NULL || $Remark == NULL || $String == NULL) {
+   echo 'Router_ID = ' . $Router_ID . ' Router_IP = ' . $Router_IP . ' Router_Name = ' . $Router_Name . ' String = ' . $String . ' Remark = ' . $Remark; 
     ?>
     <script language="JavaScript">alert("Incorrectly Redirect");</script>
     <script language="JavaScript">window.location.href = "login.html";</script>
     <?php
 }
 
-$userId = stripcslashes($userId);
-$name = stripcslashes($name);
-$username = stripcslashes($username);
-$status = stripcslashes($status);
-$password = stripcslashes($password);
+$Router_ID = stripcslashes($Router_ID);
+$String = stripcslashes($String);
+$Router_IP = stripcslashes($Router_IP);
+$Router_Name = stripcslashes($Router_Name);
+$Remark = stripcslashes($Remark);
 
-$userId = mysql_real_escape_string($userId);
-$name = mysql_real_escape_string($name);
-$username = mysql_real_escape_string($username);
-$status = mysql_real_escape_string($status);
-$password = mysql_real_escape_string($password);
-
-$query = "SELECT COUNT(Password) AS COUNTIT FROM admin WHERE (Password = '$password') AND (Router_ID = '$userId')";
+$Router_ID = mysql_real_escape_string($Router_ID);
+$String = mysql_real_escape_string($String);
+$Router_IP = mysql_real_escape_string($Router_IP);
+$Router_Name = mysql_real_escape_string($Router_Name);
+$Remark = mysql_real_escape_string($Remark);
+/*
+$query = "SELECT COUNT(Remark) AS COUNTIT FROM admin WHERE (Remark = '$Remark') AND (Router_ID = '$userId')";
 $result = mysql_query($query);
 $count = mysql_fetch_array($result);
 if ($count['COUNTIT'] != 1) {
     ?>
-    <script language="JavaScript">alert("Wrong Password");</script>
+    <script language="JavaScript">alert("Wrong Remark");</script>
     <script language="JavaScript">window.location.href = "login.html";</script>
     <?php
 }
-
-$query = "UPDATE admin SET Router_IP = '$username', String = '$name', Router_Name = '$status' WHERE (Router_ID = '$userId') AND (Remark  = '$password')";
+*/
+$query = "UPDATE router SET Router_IP = '$Router_IP', Router_Name = '$Router_Name', String = '$String', Remark = '$Remark'   WHERE Router_ID = '$Router_ID'";
 mysql_query($query);
 ?>
 
 <script language="JavaScript">alert("Success");</script>
-<script language="JavaScript">window.location.href = "manage_user.php";</script>
+<script language="JavaScript">window.location.href = "manage_router.php";</script>

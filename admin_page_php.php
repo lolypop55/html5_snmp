@@ -55,11 +55,11 @@
                                                         $snmpSysUptime = null;
                                                         $snmpSysName = null;
                                                         $snmpSysLocation = null;
-                                                        $snmpSysDescr = snmpwalk($rows['Router_IP'], $rows['String'], "1.3.6.1.2.1.1.1");
+                                                        $snmpSysDescr = snmpwalk($rows['Router_IP'], $rows['String'], "1.3.6.1.2.1.1.1",3000);
                                                         if (!$isDown) {
-                                                            $snmpSysUptime = snmpget($rows['Router_IP'], $rows['String'], "sysUpTime.0");
-		                                                    $snmpSysName = snmpwalk($rows['Router_IP'], $rows['String'], "1.3.6.1.2.1.1.5");
-                                                            $snmpSysLocation = snmpwalk($rows['Router_IP'], $rows['String'], "1.3.6.1.2.1.1.6");
+                                                            $snmpSysUptime = snmpget($rows['Router_IP'], $rows['String'], "sysUpTime.0",3000);
+		                                                    $snmpSysName = snmpwalk($rows['Router_IP'], $rows['String'], "1.3.6.1.2.1.1.5",3000);
+                                                            $snmpSysLocation = snmpwalk($rows['Router_IP'], $rows['String'], "1.3.6.1.2.1.1.6",3000);
                                                         }
                                                         ?>
 
